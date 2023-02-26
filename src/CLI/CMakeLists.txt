@@ -1,0 +1,5 @@
+add_library(CommandLineInterface INTERFACE)
+target_include_directories(CommandLineInterface INTERFACE include)
+
+add_executable(CLIExample examples/example.cpp)
+target_link_libraries(CLIExample PUBLIC CommandLineInterface)
